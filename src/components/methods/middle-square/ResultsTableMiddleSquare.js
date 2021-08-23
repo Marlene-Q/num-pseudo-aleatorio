@@ -6,9 +6,16 @@ export const ResultsTableMiddleSquare = ({ series }) => {
     const { degenerate, periodRange } = info;
     const { degenerateIndex, amountBucle } = degenerate; 
 
+    console.log( info );
+
     return (
         <>
 
+            {
+                periodRange === -1 && degenerateIndex === -1
+                &&
+                <div className="alert alert-success"> Hasta el momento la serie no se degenera </div>
+            }
             {
                 periodRange !== -1
                 &&
@@ -16,10 +23,8 @@ export const ResultsTableMiddleSquare = ({ series }) => {
             }
 
             {
-                periodRange === -1  && degenerateIndex === -1
-                ?
-                <div className="alert alert-success"> Hasta el momento la serie no se degenera </div>
-                :
+                degenerateIndex !== -1
+                &&
                 <div className="alert alert-warning"> Su serie se degenera en i = { degenerateIndex } </div>
             }
 

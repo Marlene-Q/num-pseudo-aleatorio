@@ -110,6 +110,10 @@ export const getMiddleSquare = ( seed, amount ) => {
     if ( periodRange === -1 ) 
         degenerate = getDegenerate( randomNumbers );
 
+    if ( degenerate.degenerateIndex === -1 && randomNumbers[ randomNumbers.length - 1 ] === 0 ) {
+        degenerate.degenerateIndex = randomNumbers.length - 1;
+    }
+
     return {
         tableRandomNumbers,
         info: {
