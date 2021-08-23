@@ -71,7 +71,7 @@ export const MiddleSquare = () => {
             {
                 solved
                 &&
-                <ResultsTableMiddleSquare resultsTable={ table } />
+                <ResultsTableMiddleSquare series={ table } />
             }
         </>
     );
