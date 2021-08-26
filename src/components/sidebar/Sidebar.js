@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import { MiddleSquare } from '../methods/middle-square/MiddleSquare';
 import { MiddleProduct } from '../methods/middle-product/MiddleProduct';
-import { LinealAlgorithm } from '../methods/lineal-algorithm/LinealAlgorithm';
+import { LinearAlgorithm } from '../methods/linear-algorithm/LinearAlgorithm';
 import { MultiplicativeAlgorithm } from '../methods/multiplicative-algorithm/MultiplicativeAlgorithm';
 
 import './sidebar.css';
@@ -13,14 +13,12 @@ export const Sidebar = () => {
 
     const handleClick = ({ target }) => {
         setCurrentPage( target.name.toString() );
-        console.log( target.name );
-        console.log( currentPage );
     };
 
     const pages = {
         "middle-square": <MiddleSquare />,
         "middle-product": <MiddleProduct />,
-        "lineal-algorithm": <LinealAlgorithm />,
+        "linear-algorithm": <LinearAlgorithm />,
         "multiplicative-algorithm": <MultiplicativeAlgorithm />,
     };
 
@@ -44,7 +42,7 @@ export const Sidebar = () => {
                     </li>
                     <li className="header"> Congruenciales </li>
                     <li>
-                        <button name="lineal-algorithm" onClick={ handleClick }>
+                        <button name="linear-algorithm" onClick={ handleClick }>
                             <i className="fa fa-users" aria-hidden="true"></i> Algoritmo lineal
                         </button>
                     </li>

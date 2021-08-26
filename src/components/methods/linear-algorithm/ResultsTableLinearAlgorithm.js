@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const ResultsTableMiddleSquare = ({ series }) => {
+export const ResultsTableLinearAlgorithm = ({ series }) => {
 
     const { tableRandomNumbers, info } = series;
     const { degenerate, periodRange } = info;
@@ -8,7 +8,6 @@ export const ResultsTableMiddleSquare = ({ series }) => {
 
     return (
         <>
-
 
             {
                 periodRange === -1 && degenerateIndex === -1
@@ -43,7 +42,7 @@ export const ResultsTableMiddleSquare = ({ series }) => {
                                 <th scope="col"> i </th>
                                 <th scope="col"> Yi </th>
                                 <th scope="col"> Operaciones </th>
-                                <th scope="col"> Xi </th>
+                                <th scope="col"> X(i + 1) </th>
                                 <th scope="col"> ri </th>
                             </tr>
                         </thead>

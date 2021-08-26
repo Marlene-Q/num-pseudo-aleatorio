@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-import { ResultsTableMiddleProduct } from './ResultsTableMiddleProduct';
+import { ResultsTableLinearAlgorithm } from './ResultsTableLinearAlgorithm';
 
 import { useForm } from '../../../hooks/useForm';
 import { getMiddleProduct } from '../../../helpers/methods/middleProduct';
 
-export const MiddleProduct = () => {
+export const LinearAlgorithm = () => {
 
     const [ solved, setSolved ] = useState( false );
     const [ table, setTable ] = useState({});
@@ -103,7 +103,7 @@ export const MiddleProduct = () => {
             {
                 solved
                 &&
-                <ResultsTableMiddleProduct series={ table } />
+                <ResultsTableLinearAlgorithm series={ table } />
             }
         </>
     );
