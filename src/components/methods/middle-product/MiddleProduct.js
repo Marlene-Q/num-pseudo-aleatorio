@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
 
-import { ResultsTableMiddleSquare } from './ResultsTableMiddleSquare';
+import { ResultsTableMiddleProduct } from './ResultsTableMiddleProduct';
 
 import { useForm } from '../../../hooks/useForm';
-import { getMiddleSquare } from '../../../helpers/methods/middleSquare';
 
-import './middleSquare.css'
-
-
-export const MiddleSquare = () => {
+export const MiddleProduct = () => {
 
     const [ solved, setSolved ] = useState( false );
     const [ table, setTable ] = useState({});
 
     const [ { semilla, cantidad }, handleInputChange ] = useForm({
-        semilla: "",
+        semilla1: "",
+        semilla2: "",
         cantidad: "",
     });
 
@@ -76,9 +73,9 @@ export const MiddleSquare = () => {
             {
                 solved
                 &&
-                <ResultsTableMiddleSquare series={ table } />
+                <ResultsTableMiddleProduct series={ table } />
             }
         </>
     );
-
 };
+
