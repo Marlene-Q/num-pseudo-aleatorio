@@ -49,7 +49,7 @@ export const MultiplicativeAlgorithm = () => {
                                     placeholder="6345"
                                     onChange={ handleInputChange }
                                 />
-                                <small className="form-text text-muted"> Debe introducir un numero mayor a 9 </small>
+                                <small className="form-text text-muted"> Debe introducir un numero mayor a 0 </small>
                             </div>
 
                             <div className="form-group">
@@ -61,7 +61,6 @@ export const MultiplicativeAlgorithm = () => {
                                     placeholder="10"
                                     onChange={ handleInputChange }
                                 />
-                                <small className="form-text text-muted"> Debe introducir un numero mayor a 9 </small>
                             </div>
 
 
