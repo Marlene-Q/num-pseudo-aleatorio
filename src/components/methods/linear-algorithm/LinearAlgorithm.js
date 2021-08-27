@@ -94,6 +94,19 @@ export const LinearAlgorithm = () => {
                                 <button className="btn btn-danger ml-3" onClick={ handleHideClick }> Ocultar </button>
                             }
                         </form>
+                        {
+                            solved
+                            &&
+                            <>
+                                <div class="alert alert-success mt-5" role="alert">
+                                    <strong> g = { table.g } </strong>
+                                </div>
+                                <div class="alert alert-success mt-2" role="alert">
+                                    <strong> a = { table.a } </strong>
+                                </div>
+                            </>
+                        }
+                        
                     </div>
                 </div>
             </div>

@@ -50,6 +50,8 @@ export const getLinearAlgorithm = ( seed, amount, k, digits ) => {
 
     return {
         tableRandomNumbers,
+        g,
+        a,
     };
 }
 
