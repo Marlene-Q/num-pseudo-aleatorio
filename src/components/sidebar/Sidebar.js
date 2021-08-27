@@ -4,6 +4,7 @@ import { MiddleSquare } from '../methods/middle-square/MiddleSquare';
 import { MiddleProduct } from '../methods/middle-product/MiddleProduct';
 import { LinearAlgorithm } from '../methods/linear-algorithm/LinearAlgorithm';
 import { MultiplicativeAlgorithm } from '../methods/multiplicative-algorithm/MultiplicativeAlgorithm';
+import { About } from '../about/About';
 
 import './sidebar.css';
 
@@ -20,6 +21,7 @@ export const Sidebar = () => {
         "middle-product": <MiddleProduct />,
         "linear-algorithm": <LinearAlgorithm />,
         "multiplicative-algorithm": <MultiplicativeAlgorithm />,
+        "about": <About />
     };
 
     return (
@@ -54,7 +56,7 @@ export const Sidebar = () => {
                     <li className="header"> Marlene </li>
                     <li>
                         <button name="about" onClick={ handleClick }>
-                            <i className="fa fa-info-circle" aria-hidden="true"></i> Acerca de Nosotros
+                            <i className="fa fa-info-circle" aria-hidden="true"></i> Acerca de
                         </button>
                     </li>
                 </ul>
